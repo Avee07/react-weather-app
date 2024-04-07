@@ -1,10 +1,15 @@
 import "./App.css";
-import UilReact from "@iconscout/react-unicons/icons/uil-react";
+
+import TopButton from "./components/TopButton";
+import Inputs from "./components/Inputs";
+import TimeAndLocation from "./components/TimeAndLocation";
 function App() {
   return (
-    <div>
-      <h1 className="text-6xl text-red-500">Hello World</h1>;
-      <UilReact size="140" color="#61DAFB" />
+    <div className="mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-500 h-fit shadow-xl shadow-gray-400 rounded-xl ">
+      <TopButton />
+      <Inputs />
+
+      <TimeAndLocation />
     </div>
   );
 }
